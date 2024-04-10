@@ -5,8 +5,9 @@
   "private": true,
   "main": "index.js",
   "type": "module",
+  "proxy": "http://localhost:3000",
   "scripts": {
-    "start": "node index.js"
+    "start": "concurrently \"node index.js\" \"cd frontend && npm start\""
   },
   "engines": {
     "node": ">=16.0.0"
@@ -14,6 +15,8 @@
   "author": "Google LLC",
   "license": "Apache-2.0",
   "dependencies": {
+    "concurrently": "^8.2.2",
     "express": "^4.17.1"
-  }
+  },
+  "keywords": []
 }
