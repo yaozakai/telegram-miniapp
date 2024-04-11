@@ -20,7 +20,7 @@ class TelegramMiniApp extends React.Component {
     // Replace 'YOUR_CHAT_ID' with your actual chat ID
     const chatId = 'YOUR_CHAT_ID';
     // Message to send
-    const message = 'Hello World from Telegram Miniapp!';
+    const message = 'Hello World from Telegram Minfffiapp!';
 
     // Send the message using the Telegram API
     fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
